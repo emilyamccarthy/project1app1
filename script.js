@@ -13,10 +13,7 @@
           }
         });
     
-    const popupTrailheads = {
-        "title": "location",
-        "content": "<b>Place:</b> {point}<br>" }    
-        
+
         var view = new MapView({
           map: webmap,
           container: "viewDiv",
@@ -33,14 +30,6 @@ var featureLayer_2 = new FeatureLayer({
   url: "https://services.arcgis.com/uCXeTVveQzP4IIcx/ArcGIS/rest/services/Bike_Routes/FeatureServer"
 });map.add(featureLayer_2);
         
-    var featureLayer_3 = new FeatureLayer({
-  url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/Layer_2/FeatureServer",
-      outFields: ["point"],
-   popupTemplate: popupTrailheads        
-});map.add(featureLayer_3);  
-        
-        
-
      
 // Adding points via features/gjson       
 
